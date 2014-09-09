@@ -1,0 +1,37 @@
+import java.lang.Object;
+import java.awt.Color;
+
+public class turtle_lab
+{
+    public static void main(String[] args)
+    {
+        World turtleWorld = new World();
+        Turtle turtle1 = new Turtle(turtleWorld);
+        Turtle turtle2 = new Turtle(turtleWorld);
+        turtle1.setPenColor(Color.green);
+        Thread.sleep(500);
+        turtle1.penUp();
+        turtle1.turn(45);
+        Thread.sleep(500);
+        turtle1.forward(100);
+        Thread.sleep(500);
+        turtle1.turn(-90);
+        Thread.sleep(500);
+        turtle1.setPenColor(Color.ORANGE);
+        Thread.sleep(500);
+        turtle1.forward(100);
+        Thread.sleep(500);
+        turtle2.setPenColor(Color.RED);
+        Thread.sleep(500);
+        turtle2.turn(-45);
+        Thread.sleep(500);
+        turtle2.forward(100);
+        Thread.sleep(500);
+        turtle2.turn(90);
+        Thread.sleep(500);
+        turtle2.setPenColor(Color.BLUE);
+        Thread.sleep(500);
+        turtle2.forward(100);
+        Thread.sleep(500);
+    }
+}
